@@ -57,6 +57,31 @@ class TodoList:
             if todo.id == todo_id:
                 return todo
         return None
+    
+    def save_to_file(self, filename):
+        """Save all todos to a JSON file"""
+        import json
+        todos_data = []
+        for todo in self.todos:
+            todos_data.append({
+                "id": todo.id,
+                "title": todo.title,
+                "completed": todo.completed
+            })
+        
+        with open(filename, "w") as f:
+            json.dump(todos_data, f, indent=2)
+        print(f"Todos saved to {filename}")
+    
+    def display_all_todos(self):
+        """Print all todos"""
+        if not self.todos:
+            print("No todos yet!")
+            return
+        
+        for todo in self.todos:
+            print(todo.get_display())
+        
 
 
 # Test the TodoList class
