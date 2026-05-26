@@ -54,4 +54,35 @@
 
 
 # 08
-print_kwargs(name="shaktiman",power="lazer"):
+# def print_kwargs(name,power):
+#     print(name ,power)
+# print_kwargs(name="shubham",power="lazer")
+# print_kwargs(power="lazer",name="shubham")
+# Same output
+
+# def print_kwargs(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value}")
+
+# print_kwargs(name="Shaktiman", power="Laser")
+# print_kwargs(name="Shaktiman", power="Laser", enemy="Tamraj Kilvish")
+
+
+
+
+# 9
+
+# generaor functionn that yield even numbers up to a specified limit
+# def even_generator(limit):
+#     for i in range(2,limit+1,2):
+#         yield i
+
+
+# even_generator(10)
+
+
+# 10
+# Factorial calculation
+
+# def addNum(a,b):
+#     while()
